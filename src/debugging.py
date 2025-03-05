@@ -1,3 +1,5 @@
+import random
+
 # print("Statement 1")
 # print("Statement 2")
 # print("Statement 3")
@@ -7,9 +9,15 @@
 # print("Statement 7")
 # print("Statement 8")
 
+from src.operations_with_two import add_two, subtract_two, multiply_by_two, divide_by_two
 
+def double(value):
+    return value * 2
 
-x = []
-for i in range(1, 6):
-    x.append(i * 3)
-print(x)
+def roll_dice(times_to_roll):
+    x = []
+    for i in range(1, times_to_roll + 1):
+        x.append(random.randint(1, 6))
+    return x
+
+print(add_two(2))
