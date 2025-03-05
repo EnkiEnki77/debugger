@@ -7,6 +7,8 @@
 # print("Statement 7")
 # print("Statement 8")
 
+
+
 x = []
 for i in range(1, 6):
     x.append(i * 3)
